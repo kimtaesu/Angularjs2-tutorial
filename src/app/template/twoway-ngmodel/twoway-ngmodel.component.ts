@@ -29,5 +29,5 @@ export class TwowayNgmodelComponent {
     { han: "대구", eng: "daegu" },
     { han: "부산", eng: "pusan" }
   ];
-  
+
 }

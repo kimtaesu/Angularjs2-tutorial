@@ -1,6 +1,6 @@
 import {BrowserModule} from "@angular/platform-browser";
 import {NgModule} from "@angular/core";
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpModule} from "@angular/http";
 import {AppComponent} from "./app.component";
 import {ChildToParentComponent} from "./component/child-to-parent/child-to-parent.component";
@@ -43,6 +43,12 @@ import {TemplateReferenceVariablesComponent} from "./template/template-reference
 import {NgclassComponent} from "./template/ngclass/ngclass.component";
 import {TemplateInputVariablesComponent} from "./template/template-input-variables/template-input-variables.component";
 import {TemplateNgforComponent} from "./template/template-ngfor/template-ngfor.component";
+import {FormGroupComponent} from "./form/form-group/form-group.component";
+import {FormStatusComponent} from "./form/form-status/form-status.component";
+import {BuiltInValidatorComponent} from "./form/built-in-validator/built-in-validator.component";
+import {FormReferenceVariableComponent} from "./form/form-reference-variable/form-reference-variable.component";
+import {CustomValidatorsComponent} from "./form/custom-validators/custom-validators.component";
+import {ElementStatusComponent} from "./form/element-status/element-status.component";
 
 @NgModule({
   declarations: [
@@ -61,7 +67,7 @@ import {TemplateNgforComponent} from "./template/template-ngfor/template-ngfor.c
     FactoryComponent, ReflectiveInjectorComponent, ClassProviderComponent,
     FactoryProviderComponent,
     ValueProviderComponent,
-    WithoutDiComponent, OpaqueTokenComponent, OptionalDecoratorComponent
+    WithoutDiComponent, OpaqueTokenComponent, OptionalDecoratorComponent,
 
   //  Template
     InterpolationComponent,
@@ -70,12 +76,17 @@ import {TemplateNgforComponent} from "./template/template-ngfor/template-ngfor.c
     OnewayExpressionComponent, TwowayNgmodelComponent,
     NgclassComponent, NgstyleComponent, NgifComponent, NgswitchComponent, NgForComponent,
     TemplateInputVariablesComponent, TemplateReferenceVariablesComponent,
-    TemplateNgforComponent
+    TemplateNgforComponent,
+
+    // Form
+    FormGroupComponent, FormStatusComponent,
+    BuiltInValidatorComponent, FormReferenceVariableComponent, CustomValidatorsComponent, ElementStatusComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
