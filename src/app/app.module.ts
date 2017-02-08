@@ -25,11 +25,24 @@ import {OptionalDecoratorComponent} from "./di/optional-decorator/optional-decor
 import {FactoryComponent} from "./di/factory/factory.component";
 import {ReflectiveInjectorComponent} from "./di/reflective-injector/reflective-injector.component";
 import {ClassProviderComponent} from "./di/class-provider/class-provider.component";
-import {AliasedClassProviderComponent} from "./di/class-provider/aliased-class-provider.component";
 import {FactoryProviderComponent} from "./di/factory-provider/factory-provider.component";
 import {ValueProviderComponent} from "./di/value-provider/value-provider.component";
 import {WithoutDiComponent} from "./di/without-di/without-di.component";
 import {OpaqueTokenComponent} from "./di/opaque-token/opaque-token.component";
+import {InterpolationComponent} from "./template/interpolation/interpolation.component";
+import {OnewayStatementComponent} from "./template/oneway-statement/oneway-statement.component";
+import {MyClickDirective} from "./template/oneway-statement/my-click.directive";
+import {ContactComponent} from "./template/oneway-statement/contact.component";
+import {OnewayExpressionComponent} from "./template/oneway-expression/oneway-expression.component";
+import {TwowayNgmodelComponent} from "./template/twoway-ngmodel/twoway-ngmodel.component";
+import {NgstyleComponent} from "./template/ngstyle/ngstyle.component";
+import {NgifComponent} from "./template/ngif/ngif.component";
+import {NgswitchComponent} from "./template/ngswitch/ngswitch.component";
+import {NgForComponent} from "./template/ngfor/ngfor.component";
+import {TemplateReferenceVariablesComponent} from "./template/template-reference-variables/template-reference-variables.component";
+import {NgclassComponent} from "./template/ngclass/ngclass.component";
+import {TemplateInputVariablesComponent} from "./template/template-input-variables/template-input-variables.component";
+import {TemplateNgforComponent} from "./template/template-ngfor/template-ngfor.component";
 
 @NgModule({
   declarations: [
@@ -45,11 +58,19 @@ import {OpaqueTokenComponent} from "./di/opaque-token/opaque-token.component";
     WordGroup, Word, ContentChildrenComp,
 
     //  Factory
-    FactoryComponent, ReflectiveInjectorComponent, ClassProviderComponent, AliasedClassProviderComponent,
+    FactoryComponent, ReflectiveInjectorComponent, ClassProviderComponent,
     FactoryProviderComponent,
     ValueProviderComponent,
     WithoutDiComponent, OpaqueTokenComponent, OptionalDecoratorComponent
 
+  //  Template
+    InterpolationComponent,
+    OnewayStatementComponent,
+    ContactComponent, MyClickDirective,
+    OnewayExpressionComponent, TwowayNgmodelComponent,
+    NgclassComponent, NgstyleComponent, NgifComponent, NgswitchComponent, NgForComponent,
+    TemplateInputVariablesComponent, TemplateReferenceVariablesComponent,
+    TemplateNgforComponent
   ],
   imports: [
     BrowserModule,
